@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="com.onefootball.listener.Listener" />
+	</listeners>
+
+	<test name="Android emulator">
+		<parameter name="platform" value="android" />
+		<parameter name="device" value="emulator-5554" />
+		<classes>
+			<class name="com.onefootball.test.FollowingTest" />
+		</classes>
+	</test>
+</suite>
